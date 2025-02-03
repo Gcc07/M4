@@ -42,3 +42,49 @@ function isValidEmail(email){
     return email.includes("@") ? true : false;  
 }
 console.log(isValidEmail("gabec@gmail.com")); // true
+
+// LOOPS
+
+//WHILE LOOPS
+
+let username = "";
+if(username === "") {
+    console.log("Please enter a username");
+} else; {
+    console.log("Welcome, $(username)");
+}
+
+let myUsername = "";
+
+while(myUsername === "") {
+    console.log("Please enter a username");
+    myUsername = window.prompt("Enter your username");
+}
+console.log("While loop complete");
+console.log('Hello $(myUsername)');
+
+// ANOTHER WAY VIA DO WHILE. RUN CODE FIRST -> CHECK CONDITION
+
+let myName;
+
+do{
+    myName - window.prompt("Enter your name");
+} while(myName === "" || myName === null);
+
+let loggedIN = false;
+let myNewUsername;
+let myPassword;
+
+while(!loggedIN) {
+    myNewUserName = window.prompt("Enter your username");
+    myNewPassword = window.prompt("Enter your password");
+    if(myNewUserName === "username" && myNewPassword === "password") {
+        loggedIN = true;
+    }
+}
+
+// FOR LOOPS //
+
+for(let i = 0; i < 5; i++) {
+    console.log("This is iteration " + i);
+}
